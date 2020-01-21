@@ -7,7 +7,9 @@ class SensorReader(MycroftSkill):
 
     @intent_file_handler('reader.sensor.intent')
     def handle_reader_sensor(self, message):
-        self.speak_dialog('reader.sensor')
+	self.speak_dialog('reader.sensor', {"value":20})
+
+
 
 
 def create_skill():
